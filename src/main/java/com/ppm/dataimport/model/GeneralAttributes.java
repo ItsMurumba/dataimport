@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "general_attributes")
+@Table(name = "generalAttributes")
 public class GeneralAttributes implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,11 +13,11 @@ public class GeneralAttributes implements Serializable{
 
     @NotNull
     @Column
-    private String implementing_mechanism_uid;
+    private String implementingMechanismUid;
 
     @NotNull
     @Column
-    private String stored_by;
+    private String storedBy;
 
     public Long getId() {
         return id;
@@ -27,19 +27,19 @@ public class GeneralAttributes implements Serializable{
         this.id = id;
     }
 
-    public String getImplementing_mechanism_uid() {
-        return implementing_mechanism_uid;
+    public String getImplementingMechanismUid() {
+        return implementingMechanismUid;
     }
 
-    public void setImplementing_mechanism_uid(String implementing_mechanism_uid) {
-        this.implementing_mechanism_uid = implementing_mechanism_uid;
+    public void setImplementingMechanismUid(String implementingMechanismUid) {
+        this.implementingMechanismUid = implementingMechanismUid;
     }
 
-    public String getStored_by() {
-        return stored_by;
+    public String getStoredBy() {
+        return storedBy;
     }
 
-    public void setStored_by(String stored_by) {
-        this.stored_by = stored_by;
+    public void setStoredBy(String storedBy) {
+        this.storedBy = storedBy;
     }
 }

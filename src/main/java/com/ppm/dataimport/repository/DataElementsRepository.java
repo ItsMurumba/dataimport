@@ -1,9 +1,9 @@
 package com.ppm.dataimport.repository;
 
-import com.ppm.dataimport.model.DataSet;
+import com.ppm.dataimport.model.DataElement;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DataSetRepository extends JpaRepository<DataSet,Long> {
+public interface DataElementsRepository extends JpaRepository<DataElement,Long> {
 }

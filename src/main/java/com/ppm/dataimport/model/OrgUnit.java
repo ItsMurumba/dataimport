@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "org_unit")
+@Table(name = "orgUnits")
 public class OrgUnit implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +16,7 @@ public class OrgUnit implements Serializable{
 
     @NotNull
     @Column(unique = true)
-    private Double mfl_code;
+    private Double mflCode;
 
     @NotNull
     @Column(unique = true)
@@ -38,19 +38,19 @@ public class OrgUnit implements Serializable{
         this.name = name;
     }
 
-    public Double getMfl_code() {
-        return mfl_code;
-    }
-
-    public void setMfl_code(Double mfl_code) {
-        this.mfl_code = mfl_code;
-    }
-
     public String getUid() {
         return uid;
     }
 
     public void setUid(String uid) {
         this.uid = uid;
+    }
+
+    public Double getMflCode() {
+        return mflCode;
+    }
+
+    public void setMflCode(Double mflCode) {
+        this.mflCode = mflCode;
     }
 }

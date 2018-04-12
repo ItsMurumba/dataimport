@@ -38,8 +38,8 @@ public class GeneralAttributesController {
         if (generalAttributes==null){
             return ResponseEntity.notFound().build();
         }
-        generalAttributes.setImplementing_mechanism_uid(generalAttributesDetails.getImplementing_mechanism_uid());
-        generalAttributes.setStored_by(generalAttributesDetails.getStored_by());
+        generalAttributes.setImplementingMechanismUid(generalAttributesDetails.getImplementingMechanismUid());
+        generalAttributes.setStoredBy(generalAttributesDetails.getStoredBy());
 
         GeneralAttributes updateGeneralAttributes=generalAttributesRepository.save(generalAttributes);
         return ResponseEntity.ok(updateGeneralAttributes);

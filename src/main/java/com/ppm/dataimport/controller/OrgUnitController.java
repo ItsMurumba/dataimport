@@ -38,7 +38,7 @@ public class OrgUnitController {
         if (orgUnit==null){
             return ResponseEntity.ok().build();
         }
-        orgUnit.setMfl_code(orgUnitDetails.getMfl_code());
+        orgUnit.setMflCode(orgUnitDetails.getMflCode());
         orgUnit.setName(orgUnitDetails.getName());
         orgUnit.setUid(orgUnitDetails.getUid());
 
